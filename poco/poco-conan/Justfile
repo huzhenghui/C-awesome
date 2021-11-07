@@ -1,0 +1,14 @@
+conan-install:
+    mkdir -p ./build && pushd ./build && conan install .. --build=missing
+
+cmake:
+    pushd ./build && CMAKE_EXPORT_COMPILE_COMMANDS=1 cmake ..
+
+cmake-build:
+    pushd ./build && cmake --build .
+
+run:
+    pushd ./build && bin/md5
+
+clean:
+    trash ./build

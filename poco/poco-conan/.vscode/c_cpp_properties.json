@@ -1,0 +1,9 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "compileCommands": "${workspaceFolder:poco-conan}/build/compile_commands.json"
+    }
+  ],
+  "version": 4
+}
